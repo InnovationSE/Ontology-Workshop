@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE rdf:RDF [
+	<!ENTITY rdf 'http://www.w3.org/1999/02/22-rdf-syntax-ns#'>
+	<!ENTITY rdfs 'http://www.w3.org/2000/01/rdf-schema#'>
+	<!ENTITY xsd 'http://www.w3.org/2001/XMLSchema#'>
+]>
+<rdf:RDF xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#" xmlns:ns0="http://www.schneider-electric.com/Buildings#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <ns0:Building rdf:about="http://www.schneider-electric.com/Buildings/Lund#B1">
+    <ns0:hasLocationFloor rdf:resource="http://www.schneider-electric.com/Buildings/Lund#F1" />
+    <ns0:hasLocationFloor rdf:resource="http://www.schneider-electric.com/Buildings/Lund#F2" />
+    <ns0:hasName rdf:datatype="&xsd;string">Building1</ns0:hasName>
+    <ns1:primaryTopic rdf:resource="http://www.schneider-electric.com/Buildings/Lund#B1" xmlns:ns1="http://xmlns.com/foaf/0.1/" />
+  </ns0:Building>
+  <ns0:Floor rdf:about="http://www.schneider-electric.com/Buildings/Lund#F1">
+    <ns0:hasLocationRoom rdf:resource="http://www.schneider-electric.com/Buildings/Lund#R1" />
+    <ns0:hasLocationRoom rdf:resource="http://www.schneider-electric.com/Buildings/Lund#R2" />
+    <ns0:hasLocationRoom rdf:resource="http://www.schneider-electric.com/Buildings/Lund#R3" />
+    <ns0:hasLocationRoom rdf:resource="http://www.schneider-electric.com/Buildings/Lund#R4" />
+    <ns0:hasName rdf:datatype="&xsd;string">Floor1</ns0:hasName>
+    <ns2:primaryTopic rdf:resource="http://www.schneider-electric.com/Buildings/Lund#F1" xmlns:ns2="http://xmlns.com/foaf/0.1/" />
+  </ns0:Floor>
+  <ns0:Floor rdf:about="http://www.schneider-electric.com/Buildings/Lund#F2">
+    <ns0:hasLocationRoom rdf:resource="http://www.schneider-electric.com/Buildings/Lund#R5" />
+    <ns0:hasLocationRoom rdf:resource="http://www.schneider-electric.com/Buildings/Lund#R6" />
+    <ns0:hasLocationRoom rdf:resource="http://www.schneider-electric.com/Buildings/Lund#R7" />
+    <ns0:hasLocationRoom rdf:resource="http://www.schneider-electric.com/Buildings/Lund#R8" />
+    <ns0:hasName rdf:datatype="&xsd;string">Floor2</ns0:hasName>
+    <ns3:primaryTopic rdf:resource="http://www.schneider-electric.com/Buildings/Lund#F2" xmlns:ns3="http://xmlns.com/foaf/0.1/" />
+  </ns0:Floor>
+  <ns0:Room rdf:about="http://www.schneider-electric.com/Buildings/Lund#R1">
+    <ns0:hasName rdf:datatype="&xsd;string">Room1</ns0:hasName>
+    <ns4:primaryTopic rdf:resource="http://www.schneider-electric.com/Buildings/Lund#R1" xmlns:ns4="http://xmlns.com/foaf/0.1/" />
+  </ns0:Room>
+  <ns0:Room rdf:about="http://www.schneider-electric.com/Buildings/Lund#R2">
+    <ns0:hasName rdf:datatype="&xsd;string">Room2</ns0:hasName>
+    <ns5:primaryTopic rdf:resource="http://www.schneider-electric.com/Buildings/Lund#R2" xmlns:ns5="http://xmlns.com/foaf/0.1/" />
+  </ns0:Room>
+  <ns0:Room rdf:about="http://www.schneider-electric.com/Buildings/Lund#R3">
+    <ns0:hasName rdf:datatype="&xsd;string">Room3</ns0:hasName>
+    <ns6:primaryTopic rdf:resource="http://www.schneider-electric.com/Buildings/Lund#R3" xmlns:ns6="http://xmlns.com/foaf/0.1/" />
+  </ns0:Room>
+  <ns0:Room rdf:about="http://www.schneider-electric.com/Buildings/Lund#R4">
+    <ns0:hasName rdf:datatype="&xsd;string">Room4</ns0:hasName>
+    <ns7:primaryTopic rdf:resource="http://www.schneider-electric.com/Buildings/Lund#R4" xmlns:ns7="http://xmlns.com/foaf/0.1/" />
+  </ns0:Room>
+  <ns0:Room rdf:about="http://www.schneider-electric.com/Buildings/Lund#R5">
+    <ns0:hasName rdf:datatype="&xsd;string">Room5</ns0:hasName>
+    <ns8:primaryTopic rdf:resource="http://www.schneider-electric.com/Buildings/Lund#R5" xmlns:ns8="http://xmlns.com/foaf/0.1/" />
+  </ns0:Room>
+  <ns0:Room rdf:about="http://www.schneider-electric.com/Buildings/Lund#R6">
+    <ns0:hasName rdf:datatype="&xsd;string">Room6</ns0:hasName>
+    <ns9:primaryTopic rdf:resource="http://www.schneider-electric.com/Buildings/Lund#R6" xmlns:ns9="http://xmlns.com/foaf/0.1/" />
+  </ns0:Room>
+  <ns0:Room rdf:about="http://www.schneider-electric.com/Buildings/Lund#R7">
+    <ns0:hasName rdf:datatype="&xsd;string">Room7</ns0:hasName>
+    <ns10:primaryTopic rdf:resource="http://www.schneider-electric.com/Buildings/Lund#R7" xmlns:ns10="http://xmlns.com/foaf/0.1/" />
+  </ns0:Room>
+  <ns0:Room rdf:about="http://www.schneider-electric.com/Buildings/Lund#R8">
+    <ns0:hasName rdf:datatype="&xsd;string">Room8</ns0:hasName>
+    <ns11:primaryTopic rdf:resource="http://www.schneider-electric.com/Buildings/Lund#R8" xmlns:ns11="http://xmlns.com/foaf/0.1/" />
+  </ns0:Room>
+  <ns0:AutomationServer rdf:about="http://www.schneider-electric.com/Buildings/Lund#as1">
+    <ns0:controls rdf:resource="http://www.schneider-electric.com/Buildings/Lund#c1" />
+    <ns0:controls rdf:resource="http://www.schneider-electric.com/Buildings/Lund#c2" />
+    <ns0:hasName rdf:datatype="&xsd;string">AutomationServer1</ns0:hasName>
+    <ns0:hasPhysicalLocation rdf:resource="http://www.schneider-electric.com/Buildings/Lund#F1" />
+    <ns0:hasUID rdf:datatype="&xsd;string">AutomationServer1-123</ns0:hasUID>
+    <ns12:primaryTopic rdf:resource="http://www.schneider-electric.com/Buildings/Lund#as1" xmlns:ns12="http://xmlns.com/foaf/0.1/" />
+  </ns0:AutomationServer>
+  <ns0:AutomationServer rdf:about="http://www.schneider-electric.com/Buildings/Lund#as2">
+    <ns0:controls rdf:resource="http://www.schneider-electric.com/Buildings/Lund#c3" />
+    <ns0:controls rdf:resource="http://www.schneider-electric.com/Buildings/Lund#c4" />
+    <ns0:hasName rdf:datatype="&xsd;string">AutomationServer2</ns0:hasName>
+    <ns0:hasPhysicalLocation rdf:resource="http://www.schneider-electric.com/Buildings/Lund#F2" />
+    <ns0:hasUID rdf:datatype="&xsd;string">AutomationServer2-123</ns0:hasUID>
+    <ns13:primaryTopic rdf:resource="http://www.schneider-electric.com/Buildings/Lund#as2" xmlns:ns13="http://xmlns.com/foaf/0.1/" />
+  </ns0:AutomationServer>
+  <ns0:Controller rdf:about="http://www.schneider-electric.com/Buildings/Lund#c1">
+    <ns0:hasName rdf:datatype="&xsd;string">Controller1</ns0:hasName>
+    <ns0:hasPhysicalLocation rdf:resource="http://www.schneider-electric.com/Buildings/Lund#R1" />
+    <ns0:hasPoint rdf:resource="http://www.schneider-electric.com/Buildings/Lund#temp1" />
+    <ns0:hasPoint rdf:resource="http://www.schneider-electric.com/Buildings/Lund#temp2" />
+    <ns0:hasUID rdf:datatype="&xsd;string">Controller1-111</ns0:hasUID>
+    <ns14:primaryTopic rdf:resource="http://www.schneider-electric.com/Buildings/Lund#c1" xmlns:ns14="http://xmlns.com/foaf/0.1/" />
+  </ns0:Controller>
+  <ns0:Controller rdf:about="http://www.schneider-electric.com/Buildings/Lund#c2">
+    <ns0:hasName rdf:datatype="&xsd;string">Controller2</ns0:hasName>
+    <ns0:hasPhysicalLocation rdf:resource="http://www.schneider-electric.com/Buildings/Lund#R4" />
+    <ns0:hasPoint rdf:resource="http://www.schneider-electric.com/Buildings/Lund#energy3" />
+    <ns0:hasPoint rdf:resource="http://www.schneider-electric.com/Buildings/Lund#energy4" />
+    <ns0:hasUID rdf:datatype="&xsd;string">Controller2-222</ns0:hasUID>
+    <ns15:primaryTopic rdf:resource="http://www.schneider-electric.com/Buildings/Lund#c2" xmlns:ns15="http://xmlns.com/foaf/0.1/" />
+  </ns0:Controller>
+  <ns0:Controller rdf:about="http://www.schneider-electric.com/Buildings/Lund#c3">
+    <ns0:hasName rdf:datatype="&xsd;string">Controller3</ns0:hasName>
+    <ns0:hasPhysicalLocation rdf:resource="http://www.schneider-electric.com/Buildings/Lund#R2" />
+    <ns0:hasPoint rdf:resource="http://www.schneider-electric.com/Buildings/Lund#temp5" />
+    <ns0:hasPoint rdf:resource="http://www.schneider-electric.com/Buildings/Lund#temp6" />
+    <ns0:hasUID rdf:datatype="&xsd;string">Controller3-333</ns0:hasUID>
+    <ns16:primaryTopic rdf:resource="http://www.schneider-electric.com/Buildings/Lund#c3" xmlns:ns16="http://xmlns.com/foaf/0.1/" />
+  </ns0:Controller>
+  <ns0:Controller rdf:about="http://www.schneider-electric.com/Buildings/Lund#c4">
+    <ns0:hasName rdf:datatype="&xsd;string">Controller4</ns0:hasName>
+    <ns0:hasPhysicalLocation rdf:resource="http://www.schneider-electric.com/Buildings/Lund#R5" />
+    <ns0:hasPoint rdf:resource="http://www.schneider-electric.com/Buildings/Lund#energy7" />
+    <ns0:hasPoint rdf:resource="http://www.schneider-electric.com/Buildings/Lund#energy8" />
+    <ns0:hasUID rdf:datatype="&xsd;string">Controller4-444</ns0:hasUID>
+    <ns17:primaryTopic rdf:resource="http://www.schneider-electric.com/Buildings/Lund#c4" xmlns:ns17="http://xmlns.com/foaf/0.1/" />
+  </ns0:Controller>
+  <ns0:Point rdf:about="http://www.schneider-electric.com/Buildings/Lund#energy3">
+    <ns0:hasName rdf:datatype="&xsd;string">Point3</ns0:hasName>
+    <ns0:hasPhysicalLocation rdf:resource="http://www.schneider-electric.com/Buildings/Lund#R3" />
+    <ns0:hasType rdf:resource="http://www.schneider-electric.com/Buildings#Energy" />
+    <ns0:hasUID rdf:datatype="&xsd;string">point3-333</ns0:hasUID>
+    <ns0:hasUnit rdf:resource="http://www.schneider-electric.com/Buildings#Wh" />
+    <ns18:primaryTopic rdf:resource="http://www.schneider-electric.com/Buildings/Lund#energy3" xmlns:ns18="http://xmlns.com/foaf/0.1/" />
+  </ns0:Point>
+  <ns0:Point rdf:about="http://www.schneider-electric.com/Buildings/Lund#energy4">
+    <ns0:hasName rdf:datatype="&xsd;string">Point4</ns0:hasName>
+    <ns0:hasPhysicalLocation rdf:resource="http://www.schneider-electric.com/Buildings/Lund#R4" />
+    <ns0:hasType rdf:resource="http://www.schneider-electric.com/Buildings#Energy" />
+    <ns0:hasUID rdf:datatype="&xsd;string">point4-444</ns0:hasUID>
+    <ns0:hasUnit rdf:resource="http://www.schneider-electric.com/Buildings#Wh" />
+    <ns19:primaryTopic rdf:resource="http://www.schneider-electric.com/Buildings/Lund#energy4" xmlns:ns19="http://xmlns.com/foaf/0.1/" />
+  </ns0:Point>
+  <ns0:Point rdf:about="http://www.schneider-electric.com/Buildings/Lund#energy7">
+    <ns0:hasName rdf:datatype="&xsd;string">Point7</ns0:hasName>
+    <ns0:hasPhysicalLocation rdf:resource="http://www.schneider-electric.com/Buildings/Lund#R7" />
+    <ns0:hasType rdf:resource="http://www.schneider-electric.com/Buildings#Energy" />
+    <ns0:hasUID rdf:datatype="&xsd;string">point7-777</ns0:hasUID>
+    <ns0:hasUnit rdf:resource="http://www.schneider-electric.com/Buildings#Wh" />
+    <ns20:primaryTopic rdf:resource="http://www.schneider-electric.com/Buildings/Lund#energy7" xmlns:ns20="http://xmlns.com/foaf/0.1/" />
+  </ns0:Point>
+  <ns0:Point rdf:about="http://www.schneider-electric.com/Buildings/Lund#energy8">
+    <ns0:hasName rdf:datatype="&xsd;string">Point8</ns0:hasName>
+    <ns0:hasPhysicalLocation rdf:resource="http://www.schneider-electric.com/Buildings/Lund#R8" />
+    <ns0:hasType rdf:resource="http://www.schneider-electric.com/Buildings#Energy" />
+    <ns0:hasUID rdf:datatype="&xsd;string">point8-888</ns0:hasUID>
+    <ns0:hasUnit rdf:resource="http://www.schneider-electric.com/Buildings#Wh" />
+    <ns21:primaryTopic rdf:resource="http://www.schneider-electric.com/Buildings/Lund#energy8" xmlns:ns21="http://xmlns.com/foaf/0.1/" />
+  </ns0:Point>
+  <ns0:EnterpriseServer rdf:about="http://www.schneider-electric.com/Buildings/Lund#es1">
+    <ns0:hasName rdf:datatype="&xsd;string">EnterpriseServer1</ns0:hasName>
+    <ns0:hasPhysicalLocation rdf:resource="http://www.schneider-electric.com/Buildings/Lund#B1" />
+    <ns0:hasUID rdf:datatype="&xsd;string">EnterpriseServer1-123</ns0:hasUID>
+    <ns0:monitors rdf:resource="http://www.schneider-electric.com/Buildings/Lund#as1" />
+    <ns0:monitors rdf:resource="http://www.schneider-electric.com/Buildings/Lund#as2" />
+    <ns22:primaryTopic rdf:resource="http://www.schneider-electric.com/Buildings/Lund#es1" xmlns:ns22="http://xmlns.com/foaf/0.1/" />
+  </ns0:EnterpriseServer>
+  <ns0:Point rdf:about="http://www.schneider-electric.com/Buildings/Lund#temp1">
+    <ns0:hasName rdf:datatype="&xsd;string">Point1</ns0:hasName>
+    <ns0:hasPhysicalLocation rdf:resource="http://www.schneider-electric.com/Buildings/Lund#R1" />
+    <ns0:hasType rdf:resource="http://www.schneider-electric.com/Buildings#Temperature" />
+    <ns0:hasUID rdf:datatype="&xsd;string">point1-111</ns0:hasUID>
+    <ns0:hasUnit rdf:resource="http://www.schneider-electric.com/Buildings#DegreeC" />
+    <ns23:primaryTopic rdf:resource="http://www.schneider-electric.com/Buildings/Lund#temp1" xmlns:ns23="http://xmlns.com/foaf/0.1/" />
+  </ns0:Point>
+  <ns0:Point rdf:about="http://www.schneider-electric.com/Buildings/Lund#temp2">
+    <ns0:hasName rdf:datatype="&xsd;string">Point2</ns0:hasName>
+    <ns0:hasPhysicalLocation rdf:resource="http://www.schneider-electric.com/Buildings/Lund#R2" />
+    <ns0:hasType rdf:resource="http://www.schneider-electric.com/Buildings#Temperature" />
+    <ns0:hasUID rdf:datatype="&xsd;string">point2-222</ns0:hasUID>
+    <ns0:hasUnit rdf:resource="http://www.schneider-electric.com/Buildings#DegreeC" />
+    <ns24:primaryTopic rdf:resource="http://www.schneider-electric.com/Buildings/Lund#temp2" xmlns:ns24="http://xmlns.com/foaf/0.1/" />
+  </ns0:Point>
+  <ns0:Point rdf:about="http://www.schneider-electric.com/Buildings/Lund#temp5">
+    <ns0:hasName rdf:datatype="&xsd;string">Point5</ns0:hasName>
+    <ns0:hasPhysicalLocation rdf:resource="http://www.schneider-electric.com/Buildings/Lund#R5" />
+    <ns0:hasType rdf:resource="http://www.schneider-electric.com/Buildings#Temperature" />
+    <ns0:hasUID rdf:datatype="&xsd;string">point5-555</ns0:hasUID>
+    <ns0:hasUnit rdf:resource="http://www.schneider-electric.com/Buildings#DegreeC" />
+    <ns25:primaryTopic rdf:resource="http://www.schneider-electric.com/Buildings/Lund#temp5" xmlns:ns25="http://xmlns.com/foaf/0.1/" />
+  </ns0:Point>
+  <ns0:Point rdf:about="http://www.schneider-electric.com/Buildings/Lund#temp6">
+    <ns0:hasName rdf:datatype="&xsd;string">Point6</ns0:hasName>
+    <ns0:hasPhysicalLocation rdf:resource="http://www.schneider-electric.com/Buildings/Lund#R6" />
+    <ns0:hasType rdf:resource="http://www.schneider-electric.com/Buildings#Temperature" />
+    <ns0:hasUnit rdf:resource="http://www.schneider-electric.com/Buildings#DegreeC" />
+    <ns26:primaryTopic rdf:resource="http://www.schneider-electric.com/Buildings/Lund#temp6" xmlns:ns26="http://xmlns.com/foaf/0.1/" />
+  </ns0:Point>
+</rdf:RDF>

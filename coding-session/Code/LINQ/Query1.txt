@@ -1,0 +1,13 @@
+ public static void Query1()
+        {
+            IQueryable<IController> untypedQuery = from controller in context.AsQueryable<IController>()
+                                               where controller.Name == "Controller1"
+                                               select controller;
+
+            foreach (IController controller in untypedQuery)
+            {
+                Console.WriteLine("- " + controller.AsEntity<IController>().Name);
+            }
+			Console.WriteLine("End of results");
+            Console.ReadLine();
+        }

@@ -1,0 +1,628 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.schneider-electric.com/Buildings#"
+     xml:base="http://www.schneider-electric.com/Buildings"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:Buildings="http://www.schneider-electric.com/Buildings#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.schneider-electric.com/Buildings">
+        <rdfs:comment>This is a test ontology for Buildings</rdfs:comment>
+        <rdfs:isDefinedBy>Buildings team</rdfs:isDefinedBy>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#OWLObjectProperty_2691b959_8394_407c_b44c_fc99e021065f -->
+
+    <owl:ObjectProperty rdf:about="http://www.schneider-electric.com/Buildings#OWLObjectProperty_2691b959_8394_407c_b44c_fc99e021065f">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.schneider-electric.com/Buildings#OWLObjectProperty_e40eec87_ed11_43f4_9104_eb2d22f30f60"/>
+        <rdfs:label xml:lang="en">controlledBy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#OWLObjectProperty_330c5758_337b_4212_b5c2_d42ccdb27cad -->
+
+    <owl:ObjectProperty rdf:about="http://www.schneider-electric.com/Buildings#OWLObjectProperty_330c5758_337b_4212_b5c2_d42ccdb27cad">
+        <rdfs:subPropertyOf rdf:resource="http://www.schneider-electric.com/Buildings#OWLObjectProperty_fde83fb9_ea43_4737_9c4c_22e1051d11c7"/>
+        <rdfs:label xml:lang="en">IsLocatedInFloor</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#OWLObjectProperty_347e5008_493d_474e_9b4c_5d8093c22f3e -->
+
+    <owl:ObjectProperty rdf:about="http://www.schneider-electric.com/Buildings#OWLObjectProperty_347e5008_493d_474e_9b4c_5d8093c22f3e">
+        <rdfs:subPropertyOf rdf:resource="http://www.schneider-electric.com/Buildings#OWLObjectProperty_fde83fb9_ea43_4737_9c4c_22e1051d11c7"/>
+        <rdfs:label xml:lang="en">hasLocationRoom</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#OWLObjectProperty_38c7cd53_9e5b_4655_aa4d_0734b8a25f85 -->
+
+    <owl:ObjectProperty rdf:about="http://www.schneider-electric.com/Buildings#OWLObjectProperty_38c7cd53_9e5b_4655_aa4d_0734b8a25f85">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.schneider-electric.com/Buildings#OWLObjectProperty_73286caa_3ad3_49e8_bfc6_dbc4a6d8634c"/>
+        <rdfs:label xml:lang="en">connectsTo</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#OWLObjectProperty_4390a568_b647_4d59_8baa_a8d4c9a10a2f -->
+
+    <owl:ObjectProperty rdf:about="http://www.schneider-electric.com/Buildings#OWLObjectProperty_4390a568_b647_4d59_8baa_a8d4c9a10a2f">
+        <rdfs:subPropertyOf rdf:resource="http://www.schneider-electric.com/Buildings#OWLObjectProperty_fde83fb9_ea43_4737_9c4c_22e1051d11c7"/>
+        <rdfs:label xml:lang="en">hasLocationFloor</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#OWLObjectProperty_5018b84b_26c2_487d_9dd1_08cb5835a93a -->
+
+    <owl:ObjectProperty rdf:about="http://www.schneider-electric.com/Buildings#OWLObjectProperty_5018b84b_26c2_487d_9dd1_08cb5835a93a">
+        <rdfs:subPropertyOf rdf:resource="http://www.schneider-electric.com/Buildings#OWLObjectProperty_fde83fb9_ea43_4737_9c4c_22e1051d11c7"/>
+        <owl:inverseOf rdf:resource="http://www.schneider-electric.com/Buildings#OWLObjectProperty_fde83fb9_ea43_4737_9c4c_22e1051d11c7"/>
+        <rdfs:label xml:lang="en">isLocatedInBuilding</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#OWLObjectProperty_507d9a09_4ecb_4f8e_ae1b_0c719f297019 -->
+
+    <owl:ObjectProperty rdf:about="http://www.schneider-electric.com/Buildings#OWLObjectProperty_507d9a09_4ecb_4f8e_ae1b_0c719f297019">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:label xml:lang="en">hasPoint</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#OWLObjectProperty_5a66ca20_cdc3_47f6_9891_88c8f01b0c18 -->
+
+    <owl:ObjectProperty rdf:about="http://www.schneider-electric.com/Buildings#OWLObjectProperty_5a66ca20_cdc3_47f6_9891_88c8f01b0c18">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.schneider-electric.com/Buildings#OWLObjectProperty_e40eec87_ed11_43f4_9104_eb2d22f30f60"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:label xml:lang="en">isControlledBy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#OWLObjectProperty_73286caa_3ad3_49e8_bfc6_dbc4a6d8634c -->
+
+    <owl:ObjectProperty rdf:about="http://www.schneider-electric.com/Buildings#OWLObjectProperty_73286caa_3ad3_49e8_bfc6_dbc4a6d8634c">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:label xml:lang="en">isConnectedTo</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#OWLObjectProperty_80e0eefc_5b6d_4a11_901e_49a303a49343 -->
+
+    <owl:ObjectProperty rdf:about="http://www.schneider-electric.com/Buildings#OWLObjectProperty_80e0eefc_5b6d_4a11_901e_49a303a49343">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:label xml:lang="en">hasType</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#OWLObjectProperty_835e4a1c_6423_4b67_8ba0_fd8d9d0ce86d -->
+
+    <owl:ObjectProperty rdf:about="http://www.schneider-electric.com/Buildings#OWLObjectProperty_835e4a1c_6423_4b67_8ba0_fd8d9d0ce86d">
+        <rdfs:subPropertyOf rdf:resource="http://www.schneider-electric.com/Buildings#OWLObjectProperty_fde83fb9_ea43_4737_9c4c_22e1051d11c7"/>
+        <rdfs:label xml:lang="en">isLocatedIn</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#OWLObjectProperty_84399e45_c0ca_47c8_977d_a91d01a90b97 -->
+
+    <owl:ObjectProperty rdf:about="http://www.schneider-electric.com/Buildings#OWLObjectProperty_84399e45_c0ca_47c8_977d_a91d01a90b97">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:label xml:lang="en">hasUnit</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#OWLObjectProperty_8e46c72c_1d2f_4763_b0c4_06eeeeef466f -->
+
+    <owl:ObjectProperty rdf:about="http://www.schneider-electric.com/Buildings#OWLObjectProperty_8e46c72c_1d2f_4763_b0c4_06eeeeef466f">
+        <rdfs:subPropertyOf rdf:resource="http://www.schneider-electric.com/Buildings#OWLObjectProperty_38c7cd53_9e5b_4655_aa4d_0734b8a25f85"/>
+        <owl:inverseOf rdf:resource="http://www.schneider-electric.com/Buildings#OWLObjectProperty_b5f11103_8de4_4ebd_89ca_f98b983bd35b"/>
+        <rdfs:label xml:lang="en">monitors</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#OWLObjectProperty_b5f11103_8de4_4ebd_89ca_f98b983bd35b -->
+
+    <owl:ObjectProperty rdf:about="http://www.schneider-electric.com/Buildings#OWLObjectProperty_b5f11103_8de4_4ebd_89ca_f98b983bd35b">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:label xml:lang="en">monitoredBy</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#OWLObjectProperty_e40eec87_ed11_43f4_9104_eb2d22f30f60 -->
+
+    <owl:ObjectProperty rdf:about="http://www.schneider-electric.com/Buildings#OWLObjectProperty_e40eec87_ed11_43f4_9104_eb2d22f30f60">
+        <rdfs:subPropertyOf rdf:resource="http://www.schneider-electric.com/Buildings#OWLObjectProperty_38c7cd53_9e5b_4655_aa4d_0734b8a25f85"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:label xml:lang="en">controls</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#OWLObjectProperty_fde83fb9_ea43_4737_9c4c_22e1051d11c7 -->
+
+    <owl:ObjectProperty rdf:about="http://www.schneider-electric.com/Buildings#OWLObjectProperty_fde83fb9_ea43_4737_9c4c_22e1051d11c7">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:label xml:lang="en">hasLocation</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#OWLClass_0662545c_437d_4f08_8ce9_e40f3fa819ec -->
+
+    <owl:Class rdf:about="http://www.schneider-electric.com/Buildings#OWLClass_0662545c_437d_4f08_8ce9_e40f3fa819ec">
+        <rdfs:subClassOf rdf:resource="http://www.schneider-electric.com/Buildings#OWLClass_ba5adf25_8999_4d55_81c4_f9cca757400e"/>
+        <rdfs:label xml:lang="en">Watt-Hour</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#OWLClass_1254b53e_688f_4c55_9f8c_7729165bac1a -->
+
+    <owl:Class rdf:about="http://www.schneider-electric.com/Buildings#OWLClass_1254b53e_688f_4c55_9f8c_7729165bac1a">
+        <rdfs:subClassOf rdf:resource="http://www.schneider-electric.com/Buildings#OWLClass_c60f9ef8_a9c5_4181_aba2_8763ec96aafa"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.schneider-electric.com/Buildings#OWLObjectProperty_8e46c72c_1d2f_4763_b0c4_06eeeeef466f"/>
+                <owl:someValuesFrom rdf:resource="http://www.schneider-electric.com/Buildings#OWLClass_b3e5d5e7_c4f8_4b9a_a473_e3d26fc8d7bb"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">EnterpriseServer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#OWLClass_13e46a6c_6a99_4f19_acec_5bbc37b02c1f -->
+
+    <owl:Class rdf:about="http://www.schneider-electric.com/Buildings#OWLClass_13e46a6c_6a99_4f19_acec_5bbc37b02c1f">
+        <rdfs:label xml:lang="en">Location</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#OWLClass_14a8adb1_048f_4624_8b29_cb0aba25227d -->
+
+    <owl:Class rdf:about="http://www.schneider-electric.com/Buildings#OWLClass_14a8adb1_048f_4624_8b29_cb0aba25227d">
+        <rdfs:subClassOf rdf:resource="http://www.schneider-electric.com/Buildings#OWLClass_9f79e3ca_5a4d_4ed8_93ae_631f06d3bb4d"/>
+        <rdfs:label xml:lang="en">ApparentEnergy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#OWLClass_26c0e7e9_c54b_485f_9156_f2a1031db667 -->
+
+    <owl:Class rdf:about="http://www.schneider-electric.com/Buildings#OWLClass_26c0e7e9_c54b_485f_9156_f2a1031db667">
+        <rdfs:subClassOf rdf:resource="http://www.schneider-electric.com/Buildings#OWLClass_c60f9ef8_a9c5_4181_aba2_8763ec96aafa"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.schneider-electric.com/Buildings#OWLObjectProperty_e40eec87_ed11_43f4_9104_eb2d22f30f60"/>
+                <owl:someValuesFrom rdf:resource="http://www.schneider-electric.com/Buildings#OWLClass_676f370a_6e72_4f52_a633_597e00004870"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Controller</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#OWLClass_3045eae3_41ea_4cea_a638_a7195a6da10e -->
+
+    <owl:Class rdf:about="http://www.schneider-electric.com/Buildings#OWLClass_3045eae3_41ea_4cea_a638_a7195a6da10e">
+        <rdfs:subClassOf rdf:resource="http://www.schneider-electric.com/Buildings#OWLClass_ddf49f5b_2152_4508_80ae_0baafd74a170"/>
+        <rdfs:label xml:lang="en">Power</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#OWLClass_30deb88c_875c_45ee_bad5_c20b4dbbb7af -->
+
+    <owl:Class rdf:about="http://www.schneider-electric.com/Buildings#OWLClass_30deb88c_875c_45ee_bad5_c20b4dbbb7af">
+        <rdfs:subClassOf rdf:resource="http://www.schneider-electric.com/Buildings#OWLClass_ba5adf25_8999_4d55_81c4_f9cca757400e"/>
+        <rdfs:label xml:lang="en">Celsius</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#OWLClass_3b0f8375_53af_480c_8281_708a95bf4517 -->
+
+    <owl:Class rdf:about="http://www.schneider-electric.com/Buildings#OWLClass_3b0f8375_53af_480c_8281_708a95bf4517">
+        <rdfs:subClassOf rdf:resource="http://www.schneider-electric.com/Buildings#OWLClass_ddf49f5b_2152_4508_80ae_0baafd74a170"/>
+        <rdfs:label xml:lang="en">ElectricCurrrent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#OWLClass_45b8b053_30f5_4a72_97df_1b0323e3be81 -->
+
+    <owl:Class rdf:about="http://www.schneider-electric.com/Buildings#OWLClass_45b8b053_30f5_4a72_97df_1b0323e3be81">
+        <rdfs:subClassOf rdf:resource="http://www.schneider-electric.com/Buildings#OWLClass_ba5adf25_8999_4d55_81c4_f9cca757400e"/>
+        <rdfs:label xml:lang="en">Volt</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#OWLClass_5b0c3e69_f574_4c73_bffd_567ea6317017 -->
+
+    <owl:Class rdf:about="http://www.schneider-electric.com/Buildings#OWLClass_5b0c3e69_f574_4c73_bffd_567ea6317017">
+        <rdfs:subClassOf rdf:resource="http://www.schneider-electric.com/Buildings#OWLClass_ddf49f5b_2152_4508_80ae_0baafd74a170"/>
+        <rdfs:label xml:lang="en">Temperature</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#OWLClass_5b5208ef_b3d8_4548_81b5_fdfaf72dbbe0 -->
+
+    <owl:Class rdf:about="http://www.schneider-electric.com/Buildings#OWLClass_5b5208ef_b3d8_4548_81b5_fdfaf72dbbe0">
+        <rdfs:subClassOf rdf:resource="http://www.schneider-electric.com/Buildings#OWLClass_13e46a6c_6a99_4f19_acec_5bbc37b02c1f"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.schneider-electric.com/Buildings#OWLObjectProperty_4390a568_b647_4d59_8baa_a8d4c9a10a2f"/>
+                <owl:someValuesFrom rdf:resource="http://www.schneider-electric.com/Buildings#OWLClass_7f1e8262_b242_470a_aa35_2d79aa255150"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Building</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#OWLClass_67639b8b_7cb7_406a_b5a3_71622082e55b -->
+
+    <owl:Class rdf:about="http://www.schneider-electric.com/Buildings#OWLClass_67639b8b_7cb7_406a_b5a3_71622082e55b">
+        <rdfs:subClassOf rdf:resource="http://www.schneider-electric.com/Buildings#OWLClass_ba5adf25_8999_4d55_81c4_f9cca757400e"/>
+        <rdfs:label xml:lang="en">Fahrenheit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#OWLClass_676f370a_6e72_4f52_a633_597e00004870 -->
+
+    <owl:Class rdf:about="http://www.schneider-electric.com/Buildings#OWLClass_676f370a_6e72_4f52_a633_597e00004870">
+        <rdfs:subClassOf rdf:resource="http://www.schneider-electric.com/Buildings#OWLClass_c60f9ef8_a9c5_4181_aba2_8763ec96aafa"/>
+        <rdfs:label xml:lang="en">Point</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#OWLClass_68130e8c_7457_456f_83c5_d58e1dc6340d -->
+
+    <owl:Class rdf:about="http://www.schneider-electric.com/Buildings#OWLClass_68130e8c_7457_456f_83c5_d58e1dc6340d">
+        <rdfs:subClassOf rdf:resource="http://www.schneider-electric.com/Buildings#OWLClass_ddf49f5b_2152_4508_80ae_0baafd74a170"/>
+        <rdfs:label xml:lang="en">Voltage</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#OWLClass_79e02e33_7221_4eef_a64d_bd9d53e373dd -->
+
+    <owl:Class rdf:about="http://www.schneider-electric.com/Buildings#OWLClass_79e02e33_7221_4eef_a64d_bd9d53e373dd">
+        <rdfs:subClassOf rdf:resource="http://www.schneider-electric.com/Buildings#OWLClass_9f79e3ca_5a4d_4ed8_93ae_631f06d3bb4d"/>
+        <rdfs:label xml:lang="en">ReactiveEnergy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#OWLClass_7f1e8262_b242_470a_aa35_2d79aa255150 -->
+
+    <owl:Class rdf:about="http://www.schneider-electric.com/Buildings#OWLClass_7f1e8262_b242_470a_aa35_2d79aa255150">
+        <rdfs:subClassOf rdf:resource="http://www.schneider-electric.com/Buildings#OWLClass_13e46a6c_6a99_4f19_acec_5bbc37b02c1f"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.schneider-electric.com/Buildings#OWLObjectProperty_347e5008_493d_474e_9b4c_5d8093c22f3e"/>
+                <owl:someValuesFrom rdf:resource="http://www.schneider-electric.com/Buildings#OWLClass_951c6e3f_518d_4f46_a7bc_6e7583ec101d"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">Floor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#OWLClass_94d0a9e3_7f76_4593_814e_47a2b29b2379 -->
+
+    <owl:Class rdf:about="http://www.schneider-electric.com/Buildings#OWLClass_94d0a9e3_7f76_4593_814e_47a2b29b2379">
+        <rdfs:subClassOf rdf:resource="http://www.schneider-electric.com/Buildings#OWLClass_9f79e3ca_5a4d_4ed8_93ae_631f06d3bb4d"/>
+        <rdfs:label xml:lang="en">ActiveEnergy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#OWLClass_951c6e3f_518d_4f46_a7bc_6e7583ec101d -->
+
+    <owl:Class rdf:about="http://www.schneider-electric.com/Buildings#OWLClass_951c6e3f_518d_4f46_a7bc_6e7583ec101d">
+        <rdfs:subClassOf rdf:resource="http://www.schneider-electric.com/Buildings#OWLClass_13e46a6c_6a99_4f19_acec_5bbc37b02c1f"/>
+        <rdfs:label xml:lang="en">Room</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#OWLClass_9f79e3ca_5a4d_4ed8_93ae_631f06d3bb4d -->
+
+    <owl:Class rdf:about="http://www.schneider-electric.com/Buildings#OWLClass_9f79e3ca_5a4d_4ed8_93ae_631f06d3bb4d">
+        <rdfs:subClassOf rdf:resource="http://www.schneider-electric.com/Buildings#OWLClass_ddf49f5b_2152_4508_80ae_0baafd74a170"/>
+        <rdfs:label xml:lang="en">Energy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#OWLClass_ac0a186e_2d70_4ef4_89c2_58a99f6d5951 -->
+
+    <owl:Class rdf:about="http://www.schneider-electric.com/Buildings#OWLClass_ac0a186e_2d70_4ef4_89c2_58a99f6d5951">
+        <rdfs:subClassOf rdf:resource="http://www.schneider-electric.com/Buildings#OWLClass_ba5adf25_8999_4d55_81c4_f9cca757400e"/>
+        <rdfs:label xml:lang="en">Watt</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#OWLClass_b3e5d5e7_c4f8_4b9a_a473_e3d26fc8d7bb -->
+
+    <owl:Class rdf:about="http://www.schneider-electric.com/Buildings#OWLClass_b3e5d5e7_c4f8_4b9a_a473_e3d26fc8d7bb">
+        <rdfs:subClassOf rdf:resource="http://www.schneider-electric.com/Buildings#OWLClass_c60f9ef8_a9c5_4181_aba2_8763ec96aafa"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.schneider-electric.com/Buildings#OWLObjectProperty_e40eec87_ed11_43f4_9104_eb2d22f30f60"/>
+                <owl:someValuesFrom rdf:resource="http://www.schneider-electric.com/Buildings#OWLClass_26c0e7e9_c54b_485f_9156_f2a1031db667"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label xml:lang="en">AutomationServer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#OWLClass_ba5adf25_8999_4d55_81c4_f9cca757400e -->
+
+    <owl:Class rdf:about="http://www.schneider-electric.com/Buildings#OWLClass_ba5adf25_8999_4d55_81c4_f9cca757400e">
+        <rdfs:label xml:lang="en">Unit</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#OWLClass_c60f9ef8_a9c5_4181_aba2_8763ec96aafa -->
+
+    <owl:Class rdf:about="http://www.schneider-electric.com/Buildings#OWLClass_c60f9ef8_a9c5_4181_aba2_8763ec96aafa">
+        <rdfs:label xml:lang="en">Source</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#OWLClass_ddf49f5b_2152_4508_80ae_0baafd74a170 -->
+
+    <owl:Class rdf:about="http://www.schneider-electric.com/Buildings#OWLClass_ddf49f5b_2152_4508_80ae_0baafd74a170">
+        <rdfs:label xml:lang="en">Quantity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#OWLClass_e16b273b_f448_42ca_b837_60c793d239d0 -->
+
+    <owl:Class rdf:about="http://www.schneider-electric.com/Buildings#OWLClass_e16b273b_f448_42ca_b837_60c793d239d0">
+        <rdfs:subClassOf rdf:resource="http://www.schneider-electric.com/Buildings#OWLClass_ba5adf25_8999_4d55_81c4_f9cca757400e"/>
+        <rdfs:label xml:lang="en">Ampere</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#OWLNamedIndividual_1aea41f3_6a57_4899_a008_ce59ef8f7d50 -->
+
+    <owl:NamedIndividual rdf:about="http://www.schneider-electric.com/Buildings#OWLNamedIndividual_1aea41f3_6a57_4899_a008_ce59ef8f7d50">
+        <rdf:type rdf:resource="http://www.schneider-electric.com/Buildings#OWLClass_26c0e7e9_c54b_485f_9156_f2a1031db667"/>
+        <OWLObjectProperty_e40eec87_ed11_43f4_9104_eb2d22f30f60 rdf:resource="http://www.schneider-electric.com/Buildings#OWLNamedIndividual_e9e1574c_37cf_4666_b7fd_7bd4212a9e15"/>
+        <rdfs:label xml:lang="en">C1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#OWLNamedIndividual_77ad2b47_0e58_4070_8e81_7af0b483634a -->
+
+    <owl:NamedIndividual rdf:about="http://www.schneider-electric.com/Buildings#OWLNamedIndividual_77ad2b47_0e58_4070_8e81_7af0b483634a">
+        <rdf:type rdf:resource="http://www.schneider-electric.com/Buildings#OWLClass_1254b53e_688f_4c55_9f8c_7729165bac1a"/>
+        <OWLObjectProperty_8e46c72c_1d2f_4763_b0c4_06eeeeef466f rdf:resource="http://www.schneider-electric.com/Buildings#OWLNamedIndividual_b5bf2932_45b5_4b36_a960_ed35a8eb1624"/>
+        <rdfs:label xml:lang="en">ES1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#OWLNamedIndividual_82435712_a883_4955_9603_d610238cb253 -->
+
+    <owl:NamedIndividual rdf:about="http://www.schneider-electric.com/Buildings#OWLNamedIndividual_82435712_a883_4955_9603_d610238cb253">
+        <rdf:type rdf:resource="http://www.schneider-electric.com/Buildings#OWLClass_1254b53e_688f_4c55_9f8c_7729165bac1a"/>
+        <OWLObjectProperty_8e46c72c_1d2f_4763_b0c4_06eeeeef466f rdf:resource="http://www.schneider-electric.com/Buildings#OWLNamedIndividual_e6993d4b_2608_4611_9fb1_5e1a9697f374"/>
+        <rdfs:label xml:lang="en">ES2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#OWLNamedIndividual_8cede223_e667_4e52_b2b4_4971de962920 -->
+
+    <owl:NamedIndividual rdf:about="http://www.schneider-electric.com/Buildings#OWLNamedIndividual_8cede223_e667_4e52_b2b4_4971de962920">
+        <rdf:type rdf:resource="http://www.schneider-electric.com/Buildings#OWLClass_5b5208ef_b3d8_4548_81b5_fdfaf72dbbe0"/>
+        <owl:sameAs rdf:resource="http://www.schneider-electric.com/Buildings#OWLNamedIndividual_b37f2c35_d2ac_47c6_83ea_a1252d097da8"/>
+        <owl:sameAs rdf:resource="http://www.schneider-electric.com/Buildings#OWLNamedIndividual_c1efd6bc_71db_442b_8249_74099efd972b"/>
+        <rdfs:label xml:lang="en">BuildingT11</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#OWLNamedIndividual_a1e41e56_967b_4f90_8d3e_a26b6b109d39 -->
+
+    <owl:NamedIndividual rdf:about="http://www.schneider-electric.com/Buildings#OWLNamedIndividual_a1e41e56_967b_4f90_8d3e_a26b6b109d39">
+        <rdf:type rdf:resource="http://www.schneider-electric.com/Buildings#OWLClass_676f370a_6e72_4f52_a633_597e00004870"/>
+        <rdfs:label xml:lang="en">P2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#OWLNamedIndividual_b37f2c35_d2ac_47c6_83ea_a1252d097da8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.schneider-electric.com/Buildings#OWLNamedIndividual_b37f2c35_d2ac_47c6_83ea_a1252d097da8">
+        <rdf:type rdf:resource="http://www.schneider-electric.com/Buildings#OWLClass_5b5208ef_b3d8_4548_81b5_fdfaf72dbbe0"/>
+        <owl:sameAs rdf:resource="http://www.schneider-electric.com/Buildings#OWLNamedIndividual_c1efd6bc_71db_442b_8249_74099efd972b"/>
+        <rdfs:label xml:lang="en">BuildingT4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#OWLNamedIndividual_b5bf2932_45b5_4b36_a960_ed35a8eb1624 -->
+
+    <owl:NamedIndividual rdf:about="http://www.schneider-electric.com/Buildings#OWLNamedIndividual_b5bf2932_45b5_4b36_a960_ed35a8eb1624">
+        <rdf:type rdf:resource="http://www.schneider-electric.com/Buildings#OWLClass_b3e5d5e7_c4f8_4b9a_a473_e3d26fc8d7bb"/>
+        <OWLObjectProperty_e40eec87_ed11_43f4_9104_eb2d22f30f60 rdf:resource="http://www.schneider-electric.com/Buildings#OWLNamedIndividual_1aea41f3_6a57_4899_a008_ce59ef8f7d50"/>
+        <rdfs:label xml:lang="en">AS1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#OWLNamedIndividual_bb69f141_a0af_4a97_a3ff_9269b83fc188 -->
+
+    <owl:NamedIndividual rdf:about="http://www.schneider-electric.com/Buildings#OWLNamedIndividual_bb69f141_a0af_4a97_a3ff_9269b83fc188">
+        <rdf:type rdf:resource="http://www.schneider-electric.com/Buildings#OWLClass_26c0e7e9_c54b_485f_9156_f2a1031db667"/>
+        <OWLObjectProperty_e40eec87_ed11_43f4_9104_eb2d22f30f60 rdf:resource="http://www.schneider-electric.com/Buildings#OWLNamedIndividual_a1e41e56_967b_4f90_8d3e_a26b6b109d39"/>
+        <rdfs:label xml:lang="en">C2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#OWLNamedIndividual_c1efd6bc_71db_442b_8249_74099efd972b -->
+
+    <owl:NamedIndividual rdf:about="http://www.schneider-electric.com/Buildings#OWLNamedIndividual_c1efd6bc_71db_442b_8249_74099efd972b">
+        <rdf:type rdf:resource="http://www.schneider-electric.com/Buildings#OWLClass_5b5208ef_b3d8_4548_81b5_fdfaf72dbbe0"/>
+        <rdfs:label xml:lang="en">BuildingT3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#OWLNamedIndividual_e6993d4b_2608_4611_9fb1_5e1a9697f374 -->
+
+    <owl:NamedIndividual rdf:about="http://www.schneider-electric.com/Buildings#OWLNamedIndividual_e6993d4b_2608_4611_9fb1_5e1a9697f374">
+        <rdf:type rdf:resource="http://www.schneider-electric.com/Buildings#OWLClass_b3e5d5e7_c4f8_4b9a_a473_e3d26fc8d7bb"/>
+        <OWLObjectProperty_e40eec87_ed11_43f4_9104_eb2d22f30f60 rdf:resource="http://www.schneider-electric.com/Buildings#OWLNamedIndividual_bb69f141_a0af_4a97_a3ff_9269b83fc188"/>
+        <rdfs:label xml:lang="en">AS2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#OWLNamedIndividual_e9e1574c_37cf_4666_b7fd_7bd4212a9e15 -->
+
+    <owl:NamedIndividual rdf:about="http://www.schneider-electric.com/Buildings#OWLNamedIndividual_e9e1574c_37cf_4666_b7fd_7bd4212a9e15">
+        <rdf:type rdf:resource="http://www.schneider-electric.com/Buildings#OWLClass_676f370a_6e72_4f52_a633_597e00004870"/>
+        <rdfs:label xml:lang="en">P1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.schneider-electric.com/Buildings#OWLClass_0662545c_437d_4f08_8ce9_e40f3fa819ec"/>
+            <rdf:Description rdf:about="http://www.schneider-electric.com/Buildings#OWLClass_30deb88c_875c_45ee_bad5_c20b4dbbb7af"/>
+            <rdf:Description rdf:about="http://www.schneider-electric.com/Buildings#OWLClass_45b8b053_30f5_4a72_97df_1b0323e3be81"/>
+            <rdf:Description rdf:about="http://www.schneider-electric.com/Buildings#OWLClass_67639b8b_7cb7_406a_b5a3_71622082e55b"/>
+            <rdf:Description rdf:about="http://www.schneider-electric.com/Buildings#OWLClass_ac0a186e_2d70_4ef4_89c2_58a99f6d5951"/>
+            <rdf:Description rdf:about="http://www.schneider-electric.com/Buildings#OWLClass_e16b273b_f448_42ca_b837_60c793d239d0"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.schneider-electric.com/Buildings#OWLClass_1254b53e_688f_4c55_9f8c_7729165bac1a"/>
+            <rdf:Description rdf:about="http://www.schneider-electric.com/Buildings#OWLClass_26c0e7e9_c54b_485f_9156_f2a1031db667"/>
+            <rdf:Description rdf:about="http://www.schneider-electric.com/Buildings#OWLClass_676f370a_6e72_4f52_a633_597e00004870"/>
+            <rdf:Description rdf:about="http://www.schneider-electric.com/Buildings#OWLClass_b3e5d5e7_c4f8_4b9a_a473_e3d26fc8d7bb"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.schneider-electric.com/Buildings#OWLClass_13e46a6c_6a99_4f19_acec_5bbc37b02c1f"/>
+            <rdf:Description rdf:about="http://www.schneider-electric.com/Buildings#OWLClass_ba5adf25_8999_4d55_81c4_f9cca757400e"/>
+            <rdf:Description rdf:about="http://www.schneider-electric.com/Buildings#OWLClass_c60f9ef8_a9c5_4181_aba2_8763ec96aafa"/>
+            <rdf:Description rdf:about="http://www.schneider-electric.com/Buildings#OWLClass_ddf49f5b_2152_4508_80ae_0baafd74a170"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.schneider-electric.com/Buildings#OWLClass_14a8adb1_048f_4624_8b29_cb0aba25227d"/>
+            <rdf:Description rdf:about="http://www.schneider-electric.com/Buildings#OWLClass_79e02e33_7221_4eef_a64d_bd9d53e373dd"/>
+            <rdf:Description rdf:about="http://www.schneider-electric.com/Buildings#OWLClass_94d0a9e3_7f76_4593_814e_47a2b29b2379"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.schneider-electric.com/Buildings#OWLClass_3045eae3_41ea_4cea_a638_a7195a6da10e"/>
+            <rdf:Description rdf:about="http://www.schneider-electric.com/Buildings#OWLClass_3b0f8375_53af_480c_8281_708a95bf4517"/>
+            <rdf:Description rdf:about="http://www.schneider-electric.com/Buildings#OWLClass_5b0c3e69_f574_4c73_bffd_567ea6317017"/>
+            <rdf:Description rdf:about="http://www.schneider-electric.com/Buildings#OWLClass_68130e8c_7457_456f_83c5_d58e1dc6340d"/>
+            <rdf:Description rdf:about="http://www.schneider-electric.com/Buildings#OWLClass_9f79e3ca_5a4d_4ed8_93ae_631f06d3bb4d"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.schneider-electric.com/Buildings#OWLClass_5b5208ef_b3d8_4548_81b5_fdfaf72dbbe0"/>
+            <rdf:Description rdf:about="http://www.schneider-electric.com/Buildings#OWLClass_7f1e8262_b242_470a_aa35_2d79aa255150"/>
+            <rdf:Description rdf:about="http://www.schneider-electric.com/Buildings#OWLClass_951c6e3f_518d_4f46_a7bc_6e7583ec101d"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+

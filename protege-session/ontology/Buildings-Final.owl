@@ -1,0 +1,698 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.schneider-electric.com/Buildings#"
+     xml:base="http://www.schneider-electric.com/Buildings"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:Buildings="http://www.schneider-electric.com/Buildings#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.schneider-electric.com/Buildings"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#connectsTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.schneider-electric.com/Buildings#connectsTo">
+        <owl:inverseOf rdf:resource="http://www.schneider-electric.com/Buildings#isConnectedTo"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#controls -->
+
+    <owl:ObjectProperty rdf:about="http://www.schneider-electric.com/Buildings#controls">
+        <rdfs:subPropertyOf rdf:resource="http://www.schneider-electric.com/Buildings#connectsTo"/>
+        <owl:inverseOf rdf:resource="http://www.schneider-electric.com/Buildings#isControlledBy"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#hasLocation -->
+
+    <owl:ObjectProperty rdf:about="http://www.schneider-electric.com/Buildings#hasLocation">
+        <owl:inverseOf rdf:resource="http://www.schneider-electric.com/Buildings#isLocatedIn"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#hasLocationBuilding -->
+
+    <owl:ObjectProperty rdf:about="http://www.schneider-electric.com/Buildings#hasLocationBuilding">
+        <rdfs:subPropertyOf rdf:resource="http://www.schneider-electric.com/Buildings#hasLocation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#hasLocationFloor -->
+
+    <owl:ObjectProperty rdf:about="http://www.schneider-electric.com/Buildings#hasLocationFloor">
+        <rdfs:subPropertyOf rdf:resource="http://www.schneider-electric.com/Buildings#hasLocation"/>
+        <owl:inverseOf rdf:resource="http://www.schneider-electric.com/Buildings#isLocatedInBuilding"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#hasLocationRoom -->
+
+    <owl:ObjectProperty rdf:about="http://www.schneider-electric.com/Buildings#hasLocationRoom">
+        <rdfs:subPropertyOf rdf:resource="http://www.schneider-electric.com/Buildings#hasLocation"/>
+        <owl:inverseOf rdf:resource="http://www.schneider-electric.com/Buildings#isLocatedInFloor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#hasPhysicalLocation -->
+
+    <owl:ObjectProperty rdf:about="http://www.schneider-electric.com/Buildings#hasPhysicalLocation"/>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#hasPoint -->
+
+    <owl:ObjectProperty rdf:about="http://www.schneider-electric.com/Buildings#hasPoint"/>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#hasType -->
+
+    <owl:ObjectProperty rdf:about="http://www.schneider-electric.com/Buildings#hasType"/>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#hasUnit -->
+
+    <owl:ObjectProperty rdf:about="http://www.schneider-electric.com/Buildings#hasUnit"/>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#isConnectedTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.schneider-electric.com/Buildings#isConnectedTo">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#isControlledBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.schneider-electric.com/Buildings#isControlledBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.schneider-electric.com/Buildings#isConnectedTo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#isLocatedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.schneider-electric.com/Buildings#isLocatedIn"/>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#isLocatedInBuilding -->
+
+    <owl:ObjectProperty rdf:about="http://www.schneider-electric.com/Buildings#isLocatedInBuilding">
+        <rdfs:subPropertyOf rdf:resource="http://www.schneider-electric.com/Buildings#isLocatedIn"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#isLocatedInFloor -->
+
+    <owl:ObjectProperty rdf:about="http://www.schneider-electric.com/Buildings#isLocatedInFloor">
+        <rdfs:subPropertyOf rdf:resource="http://www.schneider-electric.com/Buildings#isLocatedIn"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#isMonitoredBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.schneider-electric.com/Buildings#isMonitoredBy">
+        <rdfs:subPropertyOf rdf:resource="http://www.schneider-electric.com/Buildings#isConnectedTo"/>
+        <owl:inverseOf rdf:resource="http://www.schneider-electric.com/Buildings#monitors"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#monitors -->
+
+    <owl:ObjectProperty rdf:about="http://www.schneider-electric.com/Buildings#monitors">
+        <rdfs:subPropertyOf rdf:resource="http://www.schneider-electric.com/Buildings#connectsTo"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#hasName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.schneider-electric.com/Buildings#hasName">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#hasUID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.schneider-electric.com/Buildings#hasUID">
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#ActiveEnergy -->
+
+    <owl:Class rdf:about="http://www.schneider-electric.com/Buildings#ActiveEnergy">
+        <rdfs:subClassOf rdf:resource="http://www.schneider-electric.com/Buildings#Energy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#Ampere -->
+
+    <owl:Class rdf:about="http://www.schneider-electric.com/Buildings#Ampere">
+        <rdfs:subClassOf rdf:resource="http://www.schneider-electric.com/Buildings#Unit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#ApparentEnergy -->
+
+    <owl:Class rdf:about="http://www.schneider-electric.com/Buildings#ApparentEnergy">
+        <rdfs:subClassOf rdf:resource="http://www.schneider-electric.com/Buildings#Energy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#AutomationServer -->
+
+    <owl:Class rdf:about="http://www.schneider-electric.com/Buildings#AutomationServer">
+        <rdfs:subClassOf rdf:resource="http://www.schneider-electric.com/Buildings#Node"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.schneider-electric.com/Buildings#controls"/>
+                <owl:someValuesFrom rdf:resource="http://www.schneider-electric.com/Buildings#Controller"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#Building -->
+
+    <owl:Class rdf:about="http://www.schneider-electric.com/Buildings#Building">
+        <rdfs:subClassOf rdf:resource="http://www.schneider-electric.com/Buildings#Location"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#Celsius -->
+
+    <owl:Class rdf:about="http://www.schneider-electric.com/Buildings#Celsius">
+        <rdfs:subClassOf rdf:resource="http://www.schneider-electric.com/Buildings#Unit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#Controller -->
+
+    <owl:Class rdf:about="http://www.schneider-electric.com/Buildings#Controller">
+        <rdfs:subClassOf rdf:resource="http://www.schneider-electric.com/Buildings#Node"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.schneider-electric.com/Buildings#hasPoint"/>
+                <owl:someValuesFrom rdf:resource="http://www.schneider-electric.com/Buildings#Point"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#Current -->
+
+    <owl:Class rdf:about="http://www.schneider-electric.com/Buildings#Current">
+        <rdfs:subClassOf rdf:resource="http://www.schneider-electric.com/Buildings#Quantity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.schneider-electric.com/Buildings#hasUnit"/>
+                <owl:hasValue rdf:resource="http://www.schneider-electric.com/Buildings#A"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#Energy -->
+
+    <owl:Class rdf:about="http://www.schneider-electric.com/Buildings#Energy">
+        <rdfs:subClassOf rdf:resource="http://www.schneider-electric.com/Buildings#Quantity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.schneider-electric.com/Buildings#hasUnit"/>
+                <owl:hasValue rdf:resource="http://www.schneider-electric.com/Buildings#Wh"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#EnterpriseServer -->
+
+    <owl:Class rdf:about="http://www.schneider-electric.com/Buildings#EnterpriseServer">
+        <rdfs:subClassOf rdf:resource="http://www.schneider-electric.com/Buildings#Node"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.schneider-electric.com/Buildings#monitors"/>
+                <owl:someValuesFrom rdf:resource="http://www.schneider-electric.com/Buildings#AutomationServer"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#Fahrenheit -->
+
+    <owl:Class rdf:about="http://www.schneider-electric.com/Buildings#Fahrenheit">
+        <rdfs:subClassOf rdf:resource="http://www.schneider-electric.com/Buildings#Unit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#Floor -->
+
+    <owl:Class rdf:about="http://www.schneider-electric.com/Buildings#Floor">
+        <rdfs:subClassOf rdf:resource="http://www.schneider-electric.com/Buildings#Location"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#Humidity -->
+
+    <owl:Class rdf:about="http://www.schneider-electric.com/Buildings#Humidity">
+        <rdfs:subClassOf rdf:resource="http://www.schneider-electric.com/Buildings#Quantity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#Location -->
+
+    <owl:Class rdf:about="http://www.schneider-electric.com/Buildings#Location"/>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#Node -->
+
+    <owl:Class rdf:about="http://www.schneider-electric.com/Buildings#Node">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.schneider-electric.com/Buildings#hasPhysicalLocation"/>
+                <owl:someValuesFrom rdf:resource="http://www.schneider-electric.com/Buildings#Location"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.schneider-electric.com/Buildings#hasName"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.schneider-electric.com/Buildings#hasUID"/>
+                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#Point -->
+
+    <owl:Class rdf:about="http://www.schneider-electric.com/Buildings#Point">
+        <rdfs:subClassOf rdf:resource="http://www.schneider-electric.com/Buildings#Node"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#Power -->
+
+    <owl:Class rdf:about="http://www.schneider-electric.com/Buildings#Power">
+        <rdfs:subClassOf rdf:resource="http://www.schneider-electric.com/Buildings#Quantity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.schneider-electric.com/Buildings#hasUnit"/>
+                <owl:hasValue rdf:resource="http://www.schneider-electric.com/Buildings#W"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#Pressure -->
+
+    <owl:Class rdf:about="http://www.schneider-electric.com/Buildings#Pressure">
+        <rdfs:subClassOf rdf:resource="http://www.schneider-electric.com/Buildings#Quantity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#Quantity -->
+
+    <owl:Class rdf:about="http://www.schneider-electric.com/Buildings#Quantity"/>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#ReactiveEnergy -->
+
+    <owl:Class rdf:about="http://www.schneider-electric.com/Buildings#ReactiveEnergy">
+        <rdfs:subClassOf rdf:resource="http://www.schneider-electric.com/Buildings#Energy"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#Room -->
+
+    <owl:Class rdf:about="http://www.schneider-electric.com/Buildings#Room">
+        <rdfs:subClassOf rdf:resource="http://www.schneider-electric.com/Buildings#Location"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#Temperature -->
+
+    <owl:Class rdf:about="http://www.schneider-electric.com/Buildings#Temperature">
+        <rdfs:subClassOf rdf:resource="http://www.schneider-electric.com/Buildings#Quantity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.schneider-electric.com/Buildings#hasUnit"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.schneider-electric.com/Buildings#Celsius"/>
+                            <rdf:Description rdf:about="http://www.schneider-electric.com/Buildings#Fahrenheit"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#Unit -->
+
+    <owl:Class rdf:about="http://www.schneider-electric.com/Buildings#Unit"/>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#Volt -->
+
+    <owl:Class rdf:about="http://www.schneider-electric.com/Buildings#Volt">
+        <rdfs:subClassOf rdf:resource="http://www.schneider-electric.com/Buildings#Unit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#Voltage -->
+
+    <owl:Class rdf:about="http://www.schneider-electric.com/Buildings#Voltage">
+        <rdfs:subClassOf rdf:resource="http://www.schneider-electric.com/Buildings#Quantity"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.schneider-electric.com/Buildings#hasUnit"/>
+                <owl:hasValue rdf:resource="http://www.schneider-electric.com/Buildings#V"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#Watt -->
+
+    <owl:Class rdf:about="http://www.schneider-electric.com/Buildings#Watt">
+        <rdfs:subClassOf rdf:resource="http://www.schneider-electric.com/Buildings#Unit"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#Watt_Hour -->
+
+    <owl:Class rdf:about="http://www.schneider-electric.com/Buildings#Watt_Hour">
+        <rdfs:subClassOf rdf:resource="http://www.schneider-electric.com/Buildings#Unit"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#A -->
+
+    <owl:NamedIndividual rdf:about="http://www.schneider-electric.com/Buildings#A">
+        <rdf:type rdf:resource="http://www.schneider-electric.com/Buildings#Ampere"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#AS1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.schneider-electric.com/Buildings#AS1">
+        <rdf:type rdf:resource="http://www.schneider-electric.com/Buildings#AutomationServer"/>
+        <controls rdf:resource="http://www.schneider-electric.com/Buildings#C1"/>
+        <hasPhysicalLocation rdf:resource="http://www.schneider-electric.com/Buildings#Floor1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#AS2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.schneider-electric.com/Buildings#AS2">
+        <rdf:type rdf:resource="http://www.schneider-electric.com/Buildings#AutomationServer"/>
+        <controls rdf:resource="http://www.schneider-electric.com/Buildings#C2"/>
+        <hasPhysicalLocation rdf:resource="http://www.schneider-electric.com/Buildings#Floor2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#Building1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.schneider-electric.com/Buildings#Building1">
+        <rdf:type rdf:resource="http://www.schneider-electric.com/Buildings#Building"/>
+        <hasLocationFloor rdf:resource="http://www.schneider-electric.com/Buildings#Floor1"/>
+        <hasLocationFloor rdf:resource="http://www.schneider-electric.com/Buildings#Floor2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#C1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.schneider-electric.com/Buildings#C1">
+        <rdf:type rdf:resource="http://www.schneider-electric.com/Buildings#Controller"/>
+        <hasPhysicalLocation rdf:resource="http://www.schneider-electric.com/Buildings#Room1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#C2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.schneider-electric.com/Buildings#C2">
+        <rdf:type rdf:resource="http://www.schneider-electric.com/Buildings#Controller"/>
+        <hasPhysicalLocation rdf:resource="http://www.schneider-electric.com/Buildings#Room2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#DegreeC -->
+
+    <owl:NamedIndividual rdf:about="http://www.schneider-electric.com/Buildings#DegreeC">
+        <rdf:type rdf:resource="http://www.schneider-electric.com/Buildings#Celsius"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#DegreeF -->
+
+    <owl:NamedIndividual rdf:about="http://www.schneider-electric.com/Buildings#DegreeF">
+        <rdf:type rdf:resource="http://www.schneider-electric.com/Buildings#Fahrenheit"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#ES -->
+
+    <owl:NamedIndividual rdf:about="http://www.schneider-electric.com/Buildings#ES">
+        <rdf:type rdf:resource="http://www.schneider-electric.com/Buildings#EnterpriseServer"/>
+        <hasPhysicalLocation rdf:resource="http://www.schneider-electric.com/Buildings#Building1"/>
+        <monitors rdf:resource="http://www.schneider-electric.com/Buildings#AS1"/>
+        <monitors rdf:resource="http://www.schneider-electric.com/Buildings#AS2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#Floor1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.schneider-electric.com/Buildings#Floor1">
+        <rdf:type rdf:resource="http://www.schneider-electric.com/Buildings#Floor"/>
+        <hasLocationRoom rdf:resource="http://www.schneider-electric.com/Buildings#Room1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#Floor2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.schneider-electric.com/Buildings#Floor2">
+        <rdf:type rdf:resource="http://www.schneider-electric.com/Buildings#Floor"/>
+        <hasLocationRoom rdf:resource="http://www.schneider-electric.com/Buildings#Room2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#Room1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.schneider-electric.com/Buildings#Room1">
+        <rdf:type rdf:resource="http://www.schneider-electric.com/Buildings#Room"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#Room2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.schneider-electric.com/Buildings#Room2">
+        <rdf:type rdf:resource="http://www.schneider-electric.com/Buildings#Room"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#V -->
+
+    <owl:NamedIndividual rdf:about="http://www.schneider-electric.com/Buildings#V">
+        <rdf:type rdf:resource="http://www.schneider-electric.com/Buildings#Volt"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#W -->
+
+    <owl:NamedIndividual rdf:about="http://www.schneider-electric.com/Buildings#W">
+        <rdf:type rdf:resource="http://www.schneider-electric.com/Buildings#Watt"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.schneider-electric.com/Buildings#Wh -->
+
+    <owl:NamedIndividual rdf:about="http://www.schneider-electric.com/Buildings#Wh">
+        <rdf:type rdf:resource="http://www.schneider-electric.com/Buildings#Watt_Hour"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.schneider-electric.com/Buildings#ActiveEnergy"/>
+            <rdf:Description rdf:about="http://www.schneider-electric.com/Buildings#ApparentEnergy"/>
+            <rdf:Description rdf:about="http://www.schneider-electric.com/Buildings#ReactiveEnergy"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.schneider-electric.com/Buildings#Ampere"/>
+            <rdf:Description rdf:about="http://www.schneider-electric.com/Buildings#Celsius"/>
+            <rdf:Description rdf:about="http://www.schneider-electric.com/Buildings#Fahrenheit"/>
+            <rdf:Description rdf:about="http://www.schneider-electric.com/Buildings#Watt"/>
+            <rdf:Description rdf:about="http://www.schneider-electric.com/Buildings#Watt_Hour"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.schneider-electric.com/Buildings#AutomationServer"/>
+            <rdf:Description rdf:about="http://www.schneider-electric.com/Buildings#Controller"/>
+            <rdf:Description rdf:about="http://www.schneider-electric.com/Buildings#EnterpriseServer"/>
+            <rdf:Description rdf:about="http://www.schneider-electric.com/Buildings#Point"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.schneider-electric.com/Buildings#Building"/>
+            <rdf:Description rdf:about="http://www.schneider-electric.com/Buildings#Floor"/>
+            <rdf:Description rdf:about="http://www.schneider-electric.com/Buildings#Room"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.schneider-electric.com/Buildings#Current"/>
+            <rdf:Description rdf:about="http://www.schneider-electric.com/Buildings#Energy"/>
+            <rdf:Description rdf:about="http://www.schneider-electric.com/Buildings#Humidity"/>
+            <rdf:Description rdf:about="http://www.schneider-electric.com/Buildings#Power"/>
+            <rdf:Description rdf:about="http://www.schneider-electric.com/Buildings#Pressure"/>
+            <rdf:Description rdf:about="http://www.schneider-electric.com/Buildings#Temperature"/>
+            <rdf:Description rdf:about="http://www.schneider-electric.com/Buildings#Voltage"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.schneider-electric.com/Buildings#Location"/>
+            <rdf:Description rdf:about="http://www.schneider-electric.com/Buildings#Node"/>
+            <rdf:Description rdf:about="http://www.schneider-electric.com/Buildings#Quantity"/>
+            <rdf:Description rdf:about="http://www.schneider-electric.com/Buildings#Unit"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.6.20160910-2108) https://github.com/owlcs/owlapi -->
+

@@ -1,0 +1,17 @@
+ public static void Query2()
+        {
+            var conts = from es1 in context.AsQueryable<IES>()
+                         from autoserver in es1.Monitors
+                         from cont in autoserver.Controls
+                         from point in cont.HasPoints
+                         where point.Type == "Temperature"
+                         select cont;
+            
+            foreach (var cont in conts)
+            {
+                Console.WriteLine("- " + ((IController)cont).Name);
+            }
+            Console.WriteLine("End of results");
+            Console.ReadLine();
+
+        }

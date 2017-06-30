@@ -1,0 +1,22 @@
+    public static void Load()
+        {
+            IES es = context.Load<IES>(new Uri(clientURI + "#es1"));
+            Console.WriteLine();
+            Console.WriteLine("- ES: " + es.Name);
+            IList asList = es.Monitors.ToList();
+            foreach (IAS autoServer in asList)
+            {
+                Console.WriteLine(" -- AS: " + autoServer.Name);
+                IList controllerList = autoServer.Controls.ToList();
+                foreach (IController controller in controllerList)
+                {
+                    Console.WriteLine("  -- Controller: " + controller.Name);
+                    IList pointList = controller.HasPoints.ToList();
+                    foreach (IPoint point in pointList)
+                    {
+                        Console.WriteLine("   -- Point: " + point.Name);
+                    }
+                }
+            }
+            Console.ReadLine();
+        }

@@ -1,0 +1,1 @@
+stardog-admin server start
