@@ -881,5 +881,5 @@ Five steps are necessary to configure the entity context with a persistent store
 In this session, we created simple concepts to illustrate the usage of the ontologies and the queries. The next steps can be to rely on an existing standard where such classes are defined such as [SAREF 4 Buildings](http://ontoology.linkeddata.es/publish/saref4bldg/index-en.html), [Project HayStack](http://www.project-haystack.org/), [Brick for Buildings](http://brickschema.org/), or others.
 
 # Suggestions or Bugs? Please reach out
-Report it [here](https://github.schneider-electric.com/IoT/Ontology-Workshop/issues)
+Report it [here](https://github.com/InnovationSE/Ontology-Workshop/issues)
 or write to us at: charbel.kaed@outlook.com
